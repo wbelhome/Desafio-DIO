@@ -13,10 +13,12 @@ class ItemMagico {
     }
     
     // Solicita ao usuário para digitar o tipo do item mágico, o dano no item e a resistência do item
-  
+    const tipoItem = gets();
+    const danoItem = parseInt(gets());
+    const resistenciaItem = parseInt(gets());
     
     //TODO: Crie o de um objeto ItemMagico personalizado com base no tipo escolhido
-    const itemPersonalizado = new ItemMagico("armadura", 200, 300)
+    const itemPersonalizado = new ItemMagico(tipoItem, danoItem, resistenciaItem)
     // TODO: Imprima os atributos do item personalizado
     console.log("Tipo: " + itemPersonalizado.tipo );
     console.log("Dano: " + itemPersonalizado.dano );
